@@ -41,8 +41,7 @@ export const ArtDetail: React.FC<ArtDetailProps> = ({ artPiece }) => {
               <div 
                 className="w-full h-full bg-cover bg-center min-h-96"
                 style={{ 
-                  backgroundImage: `url(${artPiece.imageUrl})`,
-                  aspectRatio: artPiece.ratio 
+                  backgroundImage: `url(${artPiece.imageUrl})`
                 }}
               />
               {artPiece.hiResImageUrl && (
@@ -163,8 +162,7 @@ export const ArtDetail: React.FC<ArtDetailProps> = ({ artPiece }) => {
               src={artPiece.hiResImageUrl}
               alt={artPiece.title}
               className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-              style={{ 
-                aspectRatio: artPiece.ratio,
+              style={{
                 maxHeight: '100vh'
               }}
             />
